@@ -12,16 +12,14 @@ public class Main {
         // I worked with Jake on the extra credit part of this one and he had the great suggestion to use System.nanoTime();!
         long sum = sumOfNumbers(number);
         long sumElapsed = System.nanoTime() - sumStartTime;
-        System.out.println(sumElapsed + "ns");
-        
-        System.out.println(sum);
+        System.out.println("Time elapsed: " + sumElapsed + "ns");
 
         long gaussStartTime = System.nanoTime();
         long gaussianSum = gaussianSumOfNumbers(number);
         long gaussElapsed = System.nanoTime() - gaussStartTime;
-        System.out.println(gaussElapsed + "ns");
+        System.out.println("Gaussian time: " + gaussElapsed + "ns");
 
-        System.out.println(gaussianSum);
+        System.out.println("Sum: " + sum);
     }
 
 
